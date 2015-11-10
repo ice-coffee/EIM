@@ -1,0 +1,270 @@
+
+package  com.zn.zxw.intelligencize.model;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+  	/**
+	*±¸×¢:ÉçÇøÐÅÏ¢
+	*/
+    public class CommunityInfo implements Serializable
+    {
+        public CommunityInfo()
+        { }
+		
+		
+		/**
+		*±àºÅ
+		*/
+		private String   _id;//±àºÅ
+		/**
+		*Âß¼­±àºÅ
+		*/
+		private String   _community;//Âß¼­±àºÅ
+		/**
+		*Ãû³Æ
+		*/
+		private String   _name;//Ãû³Æ
+		/**
+		*³ÇÊÐÇøÓò
+		*/
+		private int   _cityId;//³ÇÊÐÇøÓò
+		/**
+		*¾ÓÎ¯»á±àºÅ
+		*/
+		private String   _nCId;//¾ÓÎ¯»á±àºÅ
+		/**
+		*Îï¹Ü±àºÅ
+		*/
+		private String   _pMCId;//Îï¹Ü±àºÅ
+		/**
+		*×ø±ê
+		*/
+		private String   _coord;//×ø±ê
+		/**
+		*Ô¤Áô×Ö¶Î
+		*/
+		private String   _field;//Ô¤Áô×Ö¶Î
+		private  CityInfo  _cityInfo;
+		private  NeighborhoodCommitteeInfo  _neighborhoodCommitteeInfo;
+		private  PropertyManagementCompanyInfo  _propertyManagementCompanyInfo;
+		
+		//list FK
+ private List<ComplaintInfo> _complaintInfos;
+ private List<ShopInformationInfo> _shopInformationInfos;
+ private List<UserCommunityInfo> _userCommunityInfos;
+		
+		
+		
+		
+		/**
+		*±àºÅ
+		*/
+		public String getId()
+		{
+		
+			 return _id; 
+		}
+		/**
+		*±àºÅ
+		*/
+		public void  setId (String  Id )
+		{
+			_id = Id ;
+		}
+		
+		
+		/**
+		*Âß¼­±àºÅ
+		*/
+		public String getCommunity()
+		{
+		
+			 return _community; 
+		}
+		/**
+		*Âß¼­±àºÅ
+		*/
+		public void  setCommunity (String  Community )
+		{
+			_community = Community ;
+		}
+		
+		
+		/**
+		*Ãû³Æ
+		*/
+		public String getName()
+		{
+		
+			 return _name; 
+		}
+		/**
+		*Ãû³Æ
+		*/
+		public void  setName (String  Name )
+		{
+			_name = Name ;
+		}
+		
+		
+		/**
+		*³ÇÊÐÇøÓò
+		*/
+		public int getCityId()
+		{
+		
+			 return _cityId; 
+		}
+		/**
+		*³ÇÊÐÇøÓò
+		*/
+		public void  setCityId (int  CityId )
+		{
+			_cityId = CityId ;
+		}
+		
+		
+		/**
+		*¾ÓÎ¯»á±àºÅ
+		*/
+		public String getNCId()
+		{
+		
+			 return _nCId; 
+		}
+		/**
+		*¾ÓÎ¯»á±àºÅ
+		*/
+		public void  setNCId (String  NCId )
+		{
+			_nCId = NCId ;
+		}
+		
+		
+		/**
+		*Îï¹Ü±àºÅ
+		*/
+		public String getPMCId()
+		{
+		
+			 return _pMCId; 
+		}
+		/**
+		*Îï¹Ü±àºÅ
+		*/
+		public void  setPMCId (String  PMCId )
+		{
+			_pMCId = PMCId ;
+		}
+		
+		
+		/**
+		*×ø±ê
+		*/
+		public String getCoord()
+		{
+		
+			 return _coord; 
+		}
+		/**
+		*×ø±ê
+		*/
+		public void  setCoord (String  Coord )
+		{
+			_coord = Coord ;
+		}
+		
+		
+		/**
+		*Ô¤Áô×Ö¶Î
+		*/
+		public String getField()
+		{
+		
+			 return _field; 
+		}
+		/**
+		*Ô¤Áô×Ö¶Î
+		*/
+		public void  setField (String  Field )
+		{
+			_field = Field ;
+		}
+		
+	
+		
+		
+		
+		public CityInfo  getCityInfo()
+		{
+		return _cityInfo;
+		}
+		
+		public void  setCityInfo(CityInfo  CityInfo)
+		{
+		 _cityInfo =CityInfo;
+		
+		}
+		
+		public NeighborhoodCommitteeInfo  getNeighborhoodCommitteeInfo()
+		{
+		return _neighborhoodCommitteeInfo;
+		}
+		
+		public void  setNeighborhoodCommitteeInfo(NeighborhoodCommitteeInfo  NeighborhoodCommitteeInfo)
+		{
+		 _neighborhoodCommitteeInfo =NeighborhoodCommitteeInfo;
+		
+		}
+		
+		public PropertyManagementCompanyInfo  getPropertyManagementCompanyInfo()
+		{
+		return _propertyManagementCompanyInfo;
+		}
+		
+		public void  setPropertyManagementCompanyInfo(PropertyManagementCompanyInfo  PropertyManagementCompanyInfo)
+		{
+		 _propertyManagementCompanyInfo =PropertyManagementCompanyInfo;
+		
+		}
+		
+		
+				//list FK
+     		public List< ComplaintInfo>  getComplaintInfos()
+		{
+		return _complaintInfos;
+		}
+		
+		public void  setComplaintInfos(List<ComplaintInfo>  ComplaintInfos)
+		{
+		 _complaintInfos =ComplaintInfos;
+		
+		}
+       		public List< ShopInformationInfo>  getShopInformationInfos()
+		{
+		return _shopInformationInfos;
+		}
+		
+		public void  setShopInformationInfos(List<ShopInformationInfo>  ShopInformationInfos)
+		{
+		 _shopInformationInfos =ShopInformationInfos;
+		
+		}
+       		public List< UserCommunityInfo>  getUserCommunityInfos()
+		{
+		return _userCommunityInfos;
+		}
+		
+		public void  setUserCommunityInfos(List<UserCommunityInfo>  UserCommunityInfos)
+		{
+		 _userCommunityInfos =UserCommunityInfos;
+		
+		}
+    }
+ 
+	
+		
+
+
+

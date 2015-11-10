@@ -1,0 +1,55 @@
+package com.zn.zxw.intelligencize.model;
+
+
+/**
+ * 聊天室 基本信息
+ * @author 
+ *
+ */
+public class MucRoom {
+	
+	String name;
+	String jid;
+	int occupants;
+	String description;
+	String subject;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getJid() {
+		return jid;
+	}
+	public void setJid(String jid) {
+		this.jid = jid;
+	}
+	public int getOccupants() {
+		return occupants;
+	}
+	public void setOccupants(int occupants) {
+		this.occupants = occupants;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	@Override
+	public String toString() {
+		return "MucRoom [name=" + name + ", jid=" + jid + ", occupants="
+				+ occupants + ", description=" + description + ", subject="
+				+ subject + "]";
+	}
+	
+	
+
+}

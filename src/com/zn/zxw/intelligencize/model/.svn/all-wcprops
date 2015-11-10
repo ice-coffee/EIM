@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model
+END
+UserCommunityInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/UserCommunityInfo.java
+END
+ChatGroupMemberInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatGroupMemberInfo.java
+END
+ComplaintInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ComplaintInfo.java
+END
+OfUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/OfUser.java
+END
+LevelRoleInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/LevelRoleInfo.java
+END
+JsonEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/JsonEntity.java
+END
+ShopRelateCommodityInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ShopRelateCommodityInfo.java
+END
+ChatGroupFileInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatGroupFileInfo.java
+END
+ChatGroupInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatGroupInfo.java
+END
+ChatAcceptInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatAcceptInfo.java
+END
+UserRoleInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/UserRoleInfo.java
+END
+RoleInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/RoleInfo.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/User.java
+END
+UserIPApproveInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/UserIPApproveInfo.java
+END
+MucRoom.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/MucRoom.java
+END
+DealInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/DealInfo.java
+END
+ScoreListInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ScoreListInfo.java
+END
+CityInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/CityInfo.java
+END
+PropertyManagementCompanyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/PropertyManagementCompanyInfo.java
+END
+CommodityInformationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/CommodityInformationInfo.java
+END
+ChatNotification.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatNotification.java
+END
+ChatContentInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatContentInfo.java
+END
+NeighborhoodCommitteeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/NeighborhoodCommitteeInfo.java
+END
+CommunityInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/CommunityInfo.java
+END
+PrivilegeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/PrivilegeInfo.java
+END
+AccumulativeIntegraListInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/AccumulativeIntegraListInfo.java
+END
+ShopAcceptInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ShopAcceptInfo.java
+END
+UserContactInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/UserContactInfo.java
+END
+MucHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/MucHistory.java
+END
+ChatContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatContent.java
+END
+ObjectScoreInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ObjectScoreInfo.java
+END
+TypeMenuInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/TypeMenuInfo.java
+END
+PictureListInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/PictureListInfo.java
+END
+LevelInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/LevelInfo.java
+END
+DealTypeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/DealTypeInfo.java
+END
+ChatMsgEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ChatMsgEntity.java
+END
+UserLoginInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/UserLoginInfo.java
+END
+RolePrivilegeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/RolePrivilegeInfo.java
+END
+ScoreTypeListInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ScoreTypeListInfo.java
+END
+TypeLevelOneInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/TypeLevelOneInfo.java
+END
+IndentListInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/IndentListInfo.java
+END
+CommodityDiscountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/CommodityDiscountInfo.java
+END
+ShopInformationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ShopInformationInfo.java
+END
+PictrueInformationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/PictrueInformationInfo.java
+END
+IndentInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/IndentInfo.java
+END
+ActivitySchemeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ActivitySchemeInfo.java
+END
+ShopDiscountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_intelligencize/!svn/ver/2/Intelligence/src/com/zn/zxw/intelligencize/model/ShopDiscountInfo.java
+END

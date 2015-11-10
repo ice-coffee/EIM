@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/AccumulativeIntegraListInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ActivitySchemeInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ChatAcceptInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ChatContentInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ChatGroupFileInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ChatGroupInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ChatGroupMemberInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/CityInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/CommodityDiscountInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/CommodityInformationInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/CommunityInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ComplaintInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/DealInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/DealTypeInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/IndentInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/IndentListInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/LevelInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/LevelRoleInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/NeighborhoodCommitteeInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ObjectScoreInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/PictrueInformationInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/PictureListInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/PrivilegeInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/PropertyManagementCompanyInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/RoleInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/RolePrivilegeInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ScoreListInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ScoreTypeListInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ShopAcceptInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ShopDiscountInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ShopInformationInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/ShopRelateCommodityInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/TypeLevelOneInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/TypeMenuInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/UserCommunityInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/UserContactInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/UserIPApproveInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/UserLoginInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/zn/zxw/intelligencize/model/UserRoleInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/csdn/shimiso/eim/activity/im/ChatActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/csdn/shimiso/eim/activity/im/RoomChatActivity.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
+

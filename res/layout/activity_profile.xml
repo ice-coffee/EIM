@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+    <RelativeLayout 
+        android:id="@+id/profile_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mmtitle_bg">
+        <Button
+            android:id="@+id/profile_reback_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:background="@drawable/appkefu_title_btn_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="个人资料"/>  
+    </RelativeLayout>
+	<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_top_layout"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <RelativeLayout 
+                android:id="@+id/layout_personal_headview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="change_avatar">
+                
+                <TextView
+                    android:id="@+id/personal_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:text="头像:"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/personal_head_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_toLeftOf="@+id/right_arrow"
+                    android:padding="8dp"
+                    android:gravity="right"
+                    android:background="@drawable/app_panel_friendcard_icon"/>
+                
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/layout_personal_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/personal_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="用户名:"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/personal_username_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/personal_username"
+                    android:layout_toLeftOf="@+id/right_arrow"
+                    android:ellipsize="end"
+                    android:padding="8dp"
+                    android:gravity="right"
+                    android:textSize="16sp"/>
+                
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/layout_personal_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="change_nickname" >
+
+                <TextView
+                    android:id="@+id/personal_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="昵称:"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/personal_nickname_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/personal_nickname"
+                    android:layout_toLeftOf="@+id/right_arrow"
+                    android:ellipsize="end"
+                    android:padding="8dp"
+                    android:gravity="right"
+                    android:textSize="16sp"/>
+                
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_personal_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="change_company" >
+
+                <TextView
+                    android:id="@+id/personal_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="公司:"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/personal_company_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/personal_company"
+                    android:layout_toLeftOf="@+id/right_arrow"
+                    android:ellipsize="end"
+                    android:padding="8dp"
+                    android:gravity="right"
+                    android:textSize="16sp"/>
+                
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_personal_job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="change_job" >
+
+                <TextView
+                    android:id="@+id/personal_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="职位:"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                
+                <TextView
+                    android:id="@+id/personal_job_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/personal_job"
+                    android:layout_toLeftOf="@+id/right_arrow_1"
+                    android:ellipsize="end"
+                    android:padding="8dp"
+                    android:gravity="right"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/right_arrow_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_personal_signature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="change_signature" >
+
+                <TextView
+                    android:id="@+id/personal_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="个性签名:"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                
+                <TextView
+                    android:id="@+id/personal_signature_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/personal_signature"
+                    android:layout_toLeftOf="@+id/right_arrow_2"
+                    android:ellipsize="end"
+                    android:padding="8dp"
+                    android:gravity="right"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/right_arrow_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

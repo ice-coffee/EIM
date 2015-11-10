@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+     
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ofm_photo_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="我的相册"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+        </LinearLayout> 
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black" />-->
+
+        <LinearLayout
+            android:id="@+id/linear_ziliao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ofm_collect_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="群资料"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear_yijian_fankui"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ofm_card_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="群成员"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ofm_setting_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="群设置"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+             android:id="@+id/linear_tuichu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ofm_blacklist_icon" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

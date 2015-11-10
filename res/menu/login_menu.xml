@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+	<item
+        android:id="@+id/menu_login_set"
+        android:icon="@drawable/icon"
+        android:title="登录设置"></item> 
+    <item
+        android:id="@+id/menu_help"
+         android:icon="@drawable/icon"
+        android:title="软件帮助"></item>
+
+    <item
+        android:id="@+id/menu_contactus"
+        android:icon="@drawable/icon"
+        android:title="联系我们"></item>
+ 	<item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/icon"
+        android:title="退出"></item>
+</menu>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_chuanjian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liner_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:src="@drawable/bind_mcontact_reco_friends" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="创建群聊"
+            android:textColor="#000000"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_line1" />
+
+    <LinearLayout
+        android:id="@+id/linear_jiaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liner_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:src="@drawable/auto_add_friend_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="加入群聊"
+            android:textColor="#000000"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_line1" />
+    
+      <LinearLayout
+        android:id="@+id/linear_chakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="@drawable/liner_select"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:src="@drawable/chakan_qun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="查看群聊"
+            android:textColor="#000000"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_line1" />
+
+    <ListView
+        android:id="@+id/yy_room_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/skinpic_blue"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/room_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_l_selector"
+            android:padding="0.0dip"
+            android:src="@drawable/title_btn_back" />
+
+        <TextView
+            android:id="@+id/to_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="张三"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/room_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_r_selector"
+            android:padding="0.0dip"
+            android:onClick="member"
+            android:src="@drawable/popbar_icon_info" />
+    </LinearLayout>
+<!-- 
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white3"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" /> -->
+    
+    <FrameLayout
+        android:id="@+id/room_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/msg_chat_bg" >
+        
+ <!-- 	android:layout_weight="1.0" -->
+        <ListView
+            android:id="@+id/room_chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="true"
+            android:paddingBottom="10dp"
+            android:transcriptMode="normal"
+            android:background="@color/white3"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/layout_room_record"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/chat_top_voice_bg"
+            android:padding="10dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_room_record"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/chat_icon_voice1" />
+
+            <TextView
+                android:id="@+id/room_voice_tips"
+                style="@style/Smile_TextView_White"
+                android:layout_below="@id/iv_record"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/voice_up_tips"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout> 
+
+    <include layout="@layout/include_chat_bottom_bar" />
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEEEEEE" >
+
+        <EditText
+            android:id="@+id/chat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:background="@anim/edit_text"
+            android:layout_weight="1.0"
+            android:hint="请输入内容"
+            android:inputType="textWebEditText"
+            android:text="" />
+
+        <Button
+            android:id="@+id/chat_sendbtn"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/main_page_item_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:text=" 发送 " />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

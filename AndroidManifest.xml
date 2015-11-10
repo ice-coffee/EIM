@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="csdn.shimiso.eim"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+ 	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
+ 	<!-- 访问Internet -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!--- 访问网络状态 -->
+ 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ 	<!-- 往SDCard写入数据权限 -->
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ 	<!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application android:name="csdn.shimiso.eim.activity.EimApplication" android:icon="@drawable/im" android:label="@string/app_name">
+        <uses-library android:name="android.test.runner" />
+        <activity android:name="csdn.shimiso.eim.activity.LoginActivity"  
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        <!-- 用户向导 -->
+        <activity android:name="csdn.shimiso.eim.activity.GuideViewActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 主页面 -->
+        <activity android:name="csdn.shimiso.eim.activity.MainActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 我的消息提醒 -->
+        <activity android:name="csdn.shimiso.eim.activity.notice.MyNoticeActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+       	<!-- 系统消息 -->
+        <activity android:name="csdn.shimiso.eim.activity.notice.SystemNoticeDetailActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 用户信息 -->
+        <activity android:name="csdn.shimiso.eim.activity.im.UserInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 聊天 -->
+        <activity android:name="csdn.shimiso.eim.activity.im.ChatActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+		<!-- 聊天记录 -->
+		<activity android:name="csdn.shimiso.eim.activity.im.ChatHistoryActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+		<!-- 好友信息 -->
+		<activity android:name="csdn.shimiso.eim.activity.im.FriendInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+	    <!-- 联系人列表 -->
+	    <activity android:name="csdn.shimiso.eim.activity.im.ContacterMainActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+	     <activity android:name="csdn.shimiso.eim.activity.im.RoomChatActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+		 <activity
+             android:name="csdn.shimiso.eim.activity.MUCRoom"
+             android:screenOrientation="portrait"
+            />
+        <activity
+             android:name="csdn.shimiso.eim.activity.MUCActivity"
+             android:screenOrientation="portrait"
+            />
+        <!-- 会议室成员列表  -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.RoomMemberActivity"
+             android:screenOrientation="portrait"
+            />
+        
+        <!-- 创建群  -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.GroupCreateActivity"
+             android:screenOrientation="portrait"
+            />
+         <!-- 加入群  -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.GroupJoinActivity"
+             android:screenOrientation="portrait"
+            />
+        
+             />
+         <!-- 群资料  -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.RoomInfoActivity"
+             android:screenOrientation="portrait"
+            />
+          <!-- 全屏显示图片  -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.ImageShower"
+             android:screenOrientation="portrait"
+            />
+        
+            <!-- 添加好友  -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.AddFriendActivity"
+             android:screenOrientation="portrait"
+            />
+        <!-- 修改个人信息 -->
+        <activity
+             android:name="csdn.shimiso.eim.activity.im.ProfileChangeActivity"
+             android:screenOrientation="portrait"
+            />
+		<!-- 联系人服务 -->
+		<service android:name="csdn.shimiso.eim.service.IMContactService"></service>
+		<!-- 聊天服务 -->
+		<service android:name="csdn.shimiso.eim.service.IMChatService"></service>  
+		<!-- 系统消息服务 -->
+		<service android:name="csdn.shimiso.eim.service.IMSystemMsgService"></service>
+		<!-- 重连接服务 -->
+ 		<service android:name="csdn.shimiso.eim.service.ReConnectService"></service>
+    </application>
+    <!-- 启动测试器 -->
+   	<instrumentation
+        android:label="Tests for pysfclient"
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="csdn.shimiso.eim" /> 
+</manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- popwidnow 显示消失 动画 -->
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="title_button">
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#666</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:drawableBottom">@drawable/tiny_square_selector</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 标签栏的样式  tabhost -->
+    <style name="main_tab_bottom">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/main_lab_bottom</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <!-- activity中head中样式设置，包括背景高度，宽度 -->
+    <style name="head_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/skinpic_blue_j</item>
+    </style>
+    <!-- activity中head中 底部 样式设置，包括背景高度，宽度 -->
+    <style name="head_bom_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sc_bg_glassbar_j</item>
+    </style>
+
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/top_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+    </style>
+
+    <style name="ActionBarTitle">
+        <item name="android:textSize">@dimen/base_action_bar_title_size</item>
+        <item name="android:textColor">@color/base_color_text_white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+
+    <style name="Smile_TextView_White">
+        <item name="android:textColor">@color/base_color_text_white</item>
+    </style>
+
+    <style name="Smile_Button_theme" parent="Smile_TextView_White">
+        <item name="android:background">@drawable/btn_login_selector</item>
+    </style>
+
+    <style name="Smile_TextView_Gray">
+        <item name="android:textColor">@color/base_color_text_gray</item>
+    </style>
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/head_in</item>
+  //进入时的动画           <item name="@android:windowExitAnimation">@anim/head_out</item>
+    //退出时的动画   </style>
+
+    <style name="ImageloadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+ <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AnimHead" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/head_in</item>
+        <item name="android:windowExitAnimation">@anim/head_out</item>
+    </style>
+    <!-- 显示大图片 -->
+    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimHead</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+</resources>

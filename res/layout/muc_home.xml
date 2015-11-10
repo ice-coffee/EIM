@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+         >
+
+        <!-- 账号 -->
+
+        <TextView
+            android:id="@+id/yyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 房间名:" />
+
+            <EditText
+                android:id="@+id/roomName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yyname"
+                android:singleLine="true" />
+            <!-- 密码 text -->
+
+            <TextView
+                android:id="@+id/yypwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roomName"
+                android:text="密  码:" />
+
+            <EditText
+                android:id="@+id/roomPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yypwd"
+                android:password="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/yydsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roomPwd"
+                android:text="房间主题:" />
+
+            <EditText
+                android:id="@+id/roomSubject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yydsub"
+                android:singleLine="true" />
+    </RelativeLayout>
+
+  <!--   <EditText
+        android:id="@+id/roomName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="房间名" />
+
+    <EditText
+        android:id="@+id/roomPwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="进入房间密码" />
+
+    <EditText
+        android:id="@+id/roomSubject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="房间主题" /> -->
+
+    <Button
+        android:id="@+id/createRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createRoom"
+        android:text="创建聊天室" />
+
+    <Button
+        android:id="@+id/joinRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="joinRoom"
+        android:text="进入 聊天室" />
+
+    <Button
+        android:id="@+id/getRoomList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getHostedRooms"
+        android:text="获取聊天室列表 " />
+
+    <ListView
+        android:id="@+id/roomList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

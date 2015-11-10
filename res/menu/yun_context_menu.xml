@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/yun_item_open" android:title="打开" />
+    <item android:id="@+id/yun_item_download" android:title="下载" />
+    <item android:id="@+id/yun_item_common" android:title="共享" />
+    <item android:id="@+id/yun_item_remove" android:title="删除" />
+    <item android:id="@+id/yun_item_cancel" android:title="返回" />
+</menu>
