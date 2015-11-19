@@ -65,7 +65,7 @@ public class LoginTask extends AsyncTask<String, Integer, Integer> {
 			Toast.makeText(context, "登陆成功", Toast.LENGTH_SHORT).show();
 			Intent intent = new Intent();
 			if (loginConfig.isFirstStart()) {// 如果是首次启动
-				intent.setClass(context, GuideViewActivity.class);
+				intent.setClass(context, MainActivity.class);
 				loginConfig.setFirstStart(false);
 			} else {
 				intent.setClass(context, MainActivity.class);
@@ -109,7 +109,12 @@ public class LoginTask extends AsyncTask<String, Integer, Integer> {
 			connection.connect();
 			connection.login(username, password); // 登录
 			// OfflineMsgManager.getInstance(activitySupport).dealOfflineMsg(connection);//处理离线消息
-			connection.sendPacket(new Presence(Presence.Type.available));
+
+            /**
+             * 通知服务器用户当前的状态: available--在线;  unavailable--离线
+             * 关联文章http://blog.csdn.net/majian_1987/article/details/9930637
+             */
+            connection.sendPacket(new Presence(Presence.Type.available));
 			if (loginConfig.isNovisible()) {// 隐身登录
 				Presence presence = new Presence(Presence.Type.unavailable);
 				Collection<RosterEntry> rosters = connection.getRoster()

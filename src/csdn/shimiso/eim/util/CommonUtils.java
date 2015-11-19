@@ -83,7 +83,8 @@ public class CommonUtils {
 	public static Bitmap compressImage(Bitmap image) {
 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		image.compress(Bitmap.CompressFormat.JPEG, 100, baos);// 质量压缩方法，这里100表示不压缩，把压缩后的数据存放到baos中
+        // 质量压缩方法，这里Bitmap.CompressFormat.JPEG标识要被压缩的图片格式(jpg/png/WEBP),100表示不压缩，把压缩后的数据存放到baos中
+		image.compress(Bitmap.CompressFormat.JPEG, 100, baos);
 		int options = 90;
 		while (baos.toByteArray().length / 1024 > 100) { // 循环判断如果压缩后图片是否大于100kb,大于继续压缩
 			baos.reset();// 重置baos即清空baos
@@ -101,7 +102,8 @@ public class CommonUtils {
 		BitmapFactory.Options newOpts = new BitmapFactory.Options();
 		// 开始读入图片，此时把options.inJustDecodeBounds 设回true了
 		newOpts.inJustDecodeBounds = true;
-		Bitmap bitmap = BitmapFactory.decodeFile(srcPath, newOpts);// 此时返回bm为空
+        // 此时返回bm为空
+		Bitmap bitmap = BitmapFactory.decodeFile(srcPath, newOpts);
 
 		newOpts.inJustDecodeBounds = false;
 		int w = newOpts.outWidth;
@@ -159,7 +161,8 @@ public class CommonUtils {
 		return compressImage(bitmap);// 压缩好比例大小后再进行质量压缩
 	}
 
-	public static String GetImageStr(String imagDir) {// 将图片文件转化为字节数组字符串，并对其进行Base64编码处理
+    // 将图片文件转化为字节数组字符串，并对其进行Base64编码处理
+	public static String GetImageStr(String imagDir) {
 		InputStream in = null;
 		byte[] data = null;
 		// 读取图片字节数组

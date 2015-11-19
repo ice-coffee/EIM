@@ -17,6 +17,9 @@ import csdn.shimiso.eim.comm.Constant;
 import csdn.shimiso.eim.model.User;
 import csdn.shimiso.eim.util.StringUtil;
 
+/**
+ * 联系人管理
+ */
 public class ContacterManager {
 
 	/**

@@ -58,6 +58,7 @@ public abstract class AContacterActivity extends ActivitySupport {
 		filter.addAction(Constant.ROSTER_SUBSCRIPTION);
 		// ∫√”—«Î«Û
 		filter.addAction(Constant.NEW_MESSAGE_ACTION);
+
 		filter.addAction(Constant.ACTION_SYS_MSG);
 
 		filter.addAction(Constant.ACTION_RECONNECT_STATE);

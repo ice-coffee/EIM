@@ -11,6 +11,9 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
+/**
+ *
+ */
 public class ImageShower extends Activity {
 
 	private ImageView img;
@@ -28,7 +31,7 @@ public class ImageShower extends Activity {
 		 img.setImageBitmap(bp);
 		final ImageLoadingDialog dialog = new ImageLoadingDialog(this);
 		dialog.setCanceledOnTouchOutside(false);
-		dialog.show();
+//		dialog.show();
 		new Handler().postDelayed(new Runnable() {
 			@Override
 			public void run() {

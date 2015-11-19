@@ -100,8 +100,9 @@ import csdn.shimiso.eim.util.StringUtil;
 public class ChatActivity extends AChatActivity implements OnClickListener,
 		ChatManagerListener, PacketListener {
 	// ListView mListView;
-	private Button btn_chat_emo, btn_chat_send, btn_chat_add,
-			btn_chat_keyboard, btn_speak, btn_chat_voice;
+    /* 聊天界面右下角的三个不同按钮分表代表: 内容数据/语音输入/发送 */
+	private Button btn_chat_send, btn_chat_keyboard, btn_chat_voice;
+	private Button btn_chat_emo, btn_chat_add,  btn_speak;
 	String targetId = "";
 	HeaderLayout mHeaderLayout;
 	private static int MsgPagerNum;
@@ -242,10 +243,12 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 
 	/** 开始录音 */
 	private String startVoice() {
+        //获取当前时间
 		String dir = String.valueOf(System.currentTimeMillis());
 		// 设置录音保存路径
 		mFileName = PATH + dir + ".amr";
 		System.out.println(mFileName);
+        // 获取SD卡的状态
 		String state = android.os.Environment.getExternalStorageState();
 		if (!state.equals(android.os.Environment.MEDIA_MOUNTED)) {
 			Log.i(LOG_TAG, "SD Card is not mounted,It is  " + state + ".");
@@ -254,7 +257,7 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 		if (!directory.exists() && !directory.mkdirs()) {
 			Log.i(LOG_TAG, "Path to file could not be created");
 		}
-		Toast.makeText(getApplicationContext(), "开始录音", 0).show();
+		Toast.makeText(getApplicationContext(), "开始录音", Toast.LENGTH_SHORT).show();
 		mRecorder = new MediaRecorder();
 		mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
 		mRecorder.setOutputFormat(MediaRecorder.OutputFormat.DEFAULT);
@@ -274,7 +277,7 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 		mRecorder.stop();
 		mRecorder.release();
 		mRecorder = null;
-		Toast.makeText(getApplicationContext(), "保存录音" + mFileName, 0).show();
+		Toast.makeText(getApplicationContext(), "保存录音" + mFileName, Toast.LENGTH_SHORT).show();
 	}
 
 	private static final int POLL_INTERVAL = 300;
@@ -292,6 +295,10 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 		}
 	};
 
+    /**
+     * 录音图标替换
+     * @param signalEMA
+     */
 	private void updateDisplay(double signalEMA) {
 
 		switch ((int) signalEMA) {
@@ -388,10 +395,16 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 
 	List<FaceText> emos;
 
+    /**
+     * 初始化表情
+     */
 	private void initEmoView() {
 		pager_emo = (ViewPager) findViewById(R.id.pager_emo);
 		emos = FaceTextUtils.faceTexts;
 
+        /**
+         * 生成每一个pager放到一个list集合中
+         */
 		List<View> views = new ArrayList<View>();
 		for (int i = 0; i < 2; ++i) {
 			views.add(getGridView(i));
@@ -417,8 +430,7 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 		} else if (i == 1) {
 			list.addAll(emos.subList(21, emos.size()));
 		}
-		final EmoteAdapter gridAdapter = new EmoteAdapter(ChatActivity.this,
-				list);
+		final EmoteAdapter gridAdapter = new EmoteAdapter(ChatActivity.this, list);
 		gridview.setAdapter(gridAdapter);
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 
@@ -429,9 +441,12 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 				String key = name.text.toString();
 				try {
 					if (messageInput != null && !TextUtils.isEmpty(key)) {
+                        /*获取光标选中的位置*/
 						int start = messageInput.getSelectionStart();
+                        /*把选中的表情插入光标所在的位置*/
 						CharSequence content = messageInput.getText().insert(
 								start, key);
+                        /*再把新的输入信息放到输入框中*/
 						messageInput.setText(content);
 						// ??λ???λ??
 						CharSequence info = messageInput.getText();
@@ -591,7 +606,9 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 			boolean result = false;
 			List<String> list = CommonUtils.getImagePathFromSD();
 			int msgViewTime;
+            /* 根据MsgType区分消息来源:接收/发送 */
 			if (message.getMsgType() == 0) {
+                /* 判断是否是图片信息 */
 				if (message.getContent().contains(CommonUtils.PIC_SIGN)) {
 					convertView = this.inflater.inflate(
 							R.layout.chat_rce_picture, null);

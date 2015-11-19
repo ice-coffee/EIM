@@ -161,6 +161,13 @@ public class XmppConnectionManager {
 		}
 	}
 
+    /**
+     * $$$
+     * 这里干嘛的还不知道
+     * 貌似是设置连接的解析器
+     * ProviderManager是用来管理
+     * @param pm
+     */
 	public void configure(ProviderManager pm) {
 
 		// Private Data Storage

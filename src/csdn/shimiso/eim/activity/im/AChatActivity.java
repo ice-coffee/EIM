@@ -92,14 +92,21 @@ public abstract class AChatActivity extends ActivitySupport {
 		return message_pool;
 	}
 
+    /**
+     * 发送消息
+     * @param messageContent
+     * @throws Exception
+     */
 	protected void sendMessage(String messageContent) throws Exception {
 		String time = DateUtil.date2Str(Calendar.getInstance(),
 				Constant.MS_FORMART);
+        /* 消息发送 */
 		Message message = new Message();
 		message.setProperty(IMMessage.KEY_TIME, time);
 		message.setBody(messageContent);
 		chat.sendMessage(message);
 
+        /* 消息列表刷新 */
 		IMMessage newMessage = new IMMessage();
 		newMessage.setMsgType(1);
 		newMessage.setFromSubJid(chat.getParticipant());

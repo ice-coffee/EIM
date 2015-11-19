@@ -400,6 +400,10 @@ public class ActivitySupport extends Activity implements IActivitySupport {
 		return loginConfig;
 	}
 
+    /**
+     * 获取保存子啊sp中的用户状态
+     * @return
+     */
 	@Override
 	public boolean getUserOnlineState() {
 		// preferences = getSharedPreferences(Constant.LOGIN_SET,0);

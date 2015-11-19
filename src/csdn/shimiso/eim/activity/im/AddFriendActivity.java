@@ -42,7 +42,7 @@ public class AddFriendActivity extends Activity implements View.OnClickListener{
 			break;
 		default:
 			break;
-		
+
 		}
 	}
 
