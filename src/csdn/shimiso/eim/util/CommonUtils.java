@@ -218,8 +218,8 @@ public class CommonUtils {
 					b[i] += 256;
 				}
 			}
-			// 生成jpeg图片
-			String voicStrPath = PATH + dir + ".amr";// 新生成的图片
+			// 生成音频
+			String voicStrPath = PATH + dir + ".amr";// 新生成的音频
 			// File directory = new File(imgFilePath).getParentFile();
 			OutputStream out = new FileOutputStream(voicStrPath);
 			out.write(b);

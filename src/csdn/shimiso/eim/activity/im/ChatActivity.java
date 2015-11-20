@@ -173,10 +173,11 @@ public class ChatActivity extends AChatActivity implements OnClickListener,
 			long beforeTime;
 			long afterTime;
 			int timeDistance;
+            String dir = null;
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				String dir = null;
+
 				switch (event.getAction()) {
 				case MotionEvent.ACTION_DOWN:
 					beforeTime = System.currentTimeMillis();
